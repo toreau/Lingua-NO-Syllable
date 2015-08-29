@@ -1,5 +1,9 @@
 Revision history for Lingua::NO::Syllable
 
+0.03    2015-08-29
+        - Removed unused code.
+        - Improved the documentation.
+
 0.02    2015-08-29
         - Accented characters are now normalized.
 

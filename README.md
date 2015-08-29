@@ -5,7 +5,7 @@ NAME
 
 VERSION
 
-    Version 0.02.
+    Version 0.03.
 
 SYNOPSIS
 
@@ -23,6 +23,11 @@ DESCRIPTION
 
     As the Norwegian and the Danish languages are quite similar, at least
     written, this module might work for the Danish language as well.
+
+ACCENTED CHARACTERS
+
+    Accented characters, like é, à etc., are normalized (see
+    Unicode::Normalize) before the number of syllables are calculated.
 
 SEE ALSO
 
@@ -97,4 +102,13 @@ LICENSE AND COPYRIGHT
     CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
     CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
     EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+POD ERRORS
+
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 28:
+
+      Non-ASCII character seen before =encoding in 'é,'. Assuming UTF-8
 

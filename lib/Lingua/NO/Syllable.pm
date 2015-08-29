@@ -19,11 +19,11 @@ Lingua::NO::Syllable - Count the number of syllables in Norwegian words.
 
 =head1 VERSION
 
-Version 0.02.
+Version 0.03.
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -71,7 +71,6 @@ sub syllables {
 
     # The basic rule is that the number of syllables in a word equals the
     # number of vowels.
-    # my $syllables = map { tr/$word/$_/ } @VOWELS;
     my $syllables = 0;
 
     foreach my $vowel ( @VOWELS ) {
@@ -93,6 +92,11 @@ sub syllables {
 }
 
 1;
+
+=head1 ACCENTED CHARACTERS
+
+Accented characters, like é, à etc., are normalized (see L<Unicode::Normalize>)
+before the number of syllables are calculated.
 
 =head1 SEE ALSO
 

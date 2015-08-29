@@ -6,6 +6,8 @@ use feature 'unicode_strings';
 
 require Exporter;
 
+use Unicode::Normalize;
+
 our @ISA    = qw/ Exporter /;
 our @EXPORT = qw/ syllable syllables /;
 
@@ -17,11 +19,11 @@ Lingua::NO::Syllable - Count the number of syllables in Norwegian words.
 
 =head1 VERSION
 
-Version 0.01.
+Version 0.02.
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -59,6 +61,10 @@ sub syllables {
 
     # Lowercase the word.
     $word = lc( $word );
+
+    # Normalize the word, i.e. convert accented characters to their normalized
+    # representation.
+    $word = NFD( $word );
 
     # Create an array of the word's characters.
     my @chars = split( //, $word );

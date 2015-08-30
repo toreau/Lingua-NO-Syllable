@@ -13,6 +13,8 @@ our @EXPORT = qw/ syllable syllables /;
 
 our @VOWELS = qw( a e i o u y æ ø å );
 
+=encoding utf-8
+
 =head1 NAME
 
 Lingua::NO::Syllable - Count the number of syllables in Norwegian words.

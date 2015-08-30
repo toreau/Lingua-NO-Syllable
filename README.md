@@ -1,114 +1,109 @@
-NAME
+# NAME
 
-    Lingua::NO::Syllable - Count the number of syllables in Norwegian
-    words.
+Lingua::NO::Syllable - Count the number of syllables in Norwegian words.
 
-VERSION
+# VERSION
 
-    Version 0.03.
+Version 0.03.
 
-SYNOPSIS
+# SYNOPSIS
 
-        use Lingua::NO::Syllable;
-    
-        my $count = syllables( 'Tyrannosaurus' ); # 5, because:
-                                                  # Tyr-ann-o-sau-rus
+    use Lingua::NO::Syllable;
 
-DESCRIPTION
+    my $count = syllables( 'Tyrannosaurus' ); # 5, because:
+                                              # Tyr-ann-o-sau-rus
 
-    Lingua::NO::Syllable::syllables($word) estimates the number of
-    syllables in the $word passed to it. It's an estimate, because the
-    algorithm is quick and dirty, non-alpha characters aren't considered
-    etc. Don't expect this module to give you a 100% correct answer.
+# DESCRIPTION
 
-    As the Norwegian and the Danish languages are quite similar, at least
-    written, this module might work for the Danish language as well.
+`Lingua::NO::Syllable::syllables($word)` estimates the number of syllables in
+the `$word` passed to it. It's an estimate, because the algorithm is quick
+and dirty, non-alpha characters aren't considered etc. Don't expect this
+module to give you a 100% correct answer.
 
-ACCENTED CHARACTERS
+As the Norwegian and the Danish languages are quite similar, at least written,
+this module might work for the Danish language as well.
 
-    Accented characters, like é, à etc., are normalized (see
-    Unicode::Normalize) before the number of syllables are calculated.
+# ACCENTED CHARACTERS
 
-SEE ALSO
+Accented characters, like Ã©, Ã  etc., are normalized (see [Unicode::Normalize](https://metacpan.org/pod/Unicode::Normalize))
+before the number of syllables are calculated.
 
-      * Lingua::EN::Syllable
+# SEE ALSO
 
-AUTHOR
+- [Lingua::EN::Syllable](https://metacpan.org/pod/Lingua::EN::Syllable)
 
-    Tore Aursand, <toreau at gmail.com>
+# AUTHOR
 
-BUGS
+Tore Aursand, `<toreau at gmail.com>`
 
-    Please report any bugs or feature requests to the web interface at
-    https://rt.cpan.org/Dist/Display.html?Name=Lingua-NO-Syllable
+# BUGS
 
-SUPPORT
+Please report any bugs or feature requests to the web interface at [https://rt.cpan.org/Dist/Display.html?Name=Lingua-NO-Syllable](https://rt.cpan.org/Dist/Display.html?Name=Lingua-NO-Syllable)
 
-    You can find documentation for this module with the perldoc command.
+# SUPPORT
 
-        perldoc Lingua::NO::Syllable
+You can find documentation for this module with the perldoc command.
 
-    You can also look for information at:
+    perldoc Lingua::NO::Syllable
 
-      * AnnoCPAN: Annotated CPAN documentation
+You can also look for information at:
 
-      http://annocpan.org/dist/Lingua-NO-Syllable
+- AnnoCPAN: Annotated CPAN documentation
 
-      * CPAN Ratings
+    [http://annocpan.org/dist/Lingua-NO-Syllable](http://annocpan.org/dist/Lingua-NO-Syllable)
 
-      http://cpanratings.perl.org/d/Lingua-NO-Syllable
+- CPAN Ratings
 
-      * Search CPAN
+    [http://cpanratings.perl.org/d/Lingua-NO-Syllable](http://cpanratings.perl.org/d/Lingua-NO-Syllable)
 
-      http://search.cpan.org/dist/Lingua-NO-Syllable/
+- Search CPAN
 
-LICENSE AND COPYRIGHT
+    [http://search.cpan.org/dist/Lingua-NO-Syllable/](http://search.cpan.org/dist/Lingua-NO-Syllable/)
 
-    Copyright 2015 Tore Aursand.
+# LICENSE AND COPYRIGHT
 
-    This program is free software; you can redistribute it and/or modify it
-    under the terms of the the Artistic License (2.0). You may obtain a
-    copy of the full license at:
+Copyright 2015 Tore Aursand.
 
-    http://www.perlfoundation.org/artistic_license_2_0
+This program is free software; you can redistribute it and/or modify it
+under the terms of the the Artistic License (2.0). You may obtain a
+copy of the full license at:
 
-    Any use, modification, and distribution of the Standard or Modified
-    Versions is governed by this Artistic License. By using, modifying or
-    distributing the Package, you accept this license. Do not use, modify,
-    or distribute the Package, if you do not accept this license.
+[http://www.perlfoundation.org/artistic\_license\_2\_0](http://www.perlfoundation.org/artistic_license_2_0)
 
-    If your Modified Version has been derived from a Modified Version made
-    by someone other than you, you are nevertheless required to ensure that
-    your Modified Version complies with the requirements of this license.
+Any use, modification, and distribution of the Standard or Modified
+Versions is governed by this Artistic License. By using, modifying or
+distributing the Package, you accept this license. Do not use, modify,
+or distribute the Package, if you do not accept this license.
 
-    This license does not grant you the right to use any trademark, service
-    mark, tradename, or logo of the Copyright Holder.
+If your Modified Version has been derived from a Modified Version made
+by someone other than you, you are nevertheless required to ensure that
+your Modified Version complies with the requirements of this license.
 
-    This license includes the non-exclusive, worldwide, free-of-charge
-    patent license to make, have made, use, offer to sell, sell, import and
-    otherwise transfer the Package with respect to any patent claims
-    licensable by the Copyright Holder that are necessarily infringed by
-    the Package. If you institute patent litigation (including a
-    cross-claim or counterclaim) against any party alleging that the
-    Package constitutes direct or contributory patent infringement, then
-    this Artistic License to you shall terminate on the date that such
-    litigation is filed.
+This license does not grant you the right to use any trademark, service
+mark, tradename, or logo of the Copyright Holder.
 
-    Disclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER
-    AND CONTRIBUTORS "AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-    THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-    PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY
-    YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
-    CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
-    CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
-    EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+This license includes the non-exclusive, worldwide, free-of-charge
+patent license to make, have made, use, offer to sell, sell, import and
+otherwise transfer the Package with respect to any patent claims
+licensable by the Copyright Holder that are necessarily infringed by the
+Package. If you institute patent litigation (including a cross-claim or
+counterclaim) against any party alleging that the Package constitutes
+direct or contributory patent infringement, then this Artistic License
+to you shall terminate on the date that such litigation is filed.
 
-POD ERRORS
+Disclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER
+AND CONTRIBUTORS "AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY
+YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
+CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
+CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-    Hey! The above document had some coding errors, which are explained
-    below:
+# POD ERRORS
 
-    Around line 28:
+Hey! **The above document had some coding errors, which are explained below:**
 
-      Non-ASCII character seen before =encoding in 'é,'. Assuming UTF-8
+- Around line 98:
 
+    Non-ASCII character seen before =encoding in 'Ã©,'. Assuming UTF-8

@@ -4,7 +4,7 @@ Lingua::NO::Syllable - Count the number of syllables in Norwegian words.
 
 # VERSION
 
-Version 0.04.
+Version 0.05.
 
 # SYNOPSIS
 

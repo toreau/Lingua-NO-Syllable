@@ -10,15 +10,22 @@ use Test::More;
 use Lingua::NO::Syllable;
 
 my %tests = (
+    'Bare'          => 2, # Ba-re
+    'Bavian'        => 3, # Bav-i-an
+    'Dokumentere'   => 5, # Dok-u-men-te-re
     'Fiolin'        => 3, # Fi-o-lin
     'Helikopter'    => 4, # He-li-kop-ter
-    'Idé'           => 2, # I-de (normalized)
+    'Husk'          => 1, # Husk
     'Idè'           => 2, # I-de (normalized)
+    'Idé'           => 2, # I-de (normalized)
     'Løyve'         => 2, # Løy-ve
+    'Påstander'     => 3, # På-stand-er
+    'Restaurant'    => 3, # Rest-au-rant
     'Saumfare'      => 3, # Saum-fa-re
     'Soyabønner'    => 4, # So-ya-bønn-er
     'Tyrannosaurus' => 5, # Tyr-ann-o-sau-rus
     'Veikro'        => 2, # Vei-kro
+    'Å'             => 1, # Å
     'Øy'            => 1, # Øy
 );
 

@@ -16,9 +16,10 @@ my %tests = (
     'Fiolin'        => 3, # Fi-o-lin
     'Helikopter'    => 4, # He-li-kop-ter
     'Husk'          => 1, # Husk
-    'Idè'           => 2, # I-de (normalized)
     'Idé'           => 2, # I-de (normalized)
+    'Idè'           => 2, # I-de (normalized)
     'Løyve'         => 2, # Løy-ve
+    'Øy'            => 1, # Øy
     'Påstander'     => 3, # På-stand-er
     'Restaurant'    => 3, # Rest-au-rant
     'Saumfare'      => 3, # Saum-fa-re
@@ -26,13 +27,12 @@ my %tests = (
     'Tyrannosaurus' => 5, # Tyr-ann-o-sau-rus
     'Veikro'        => 2, # Vei-kro
     'Å'             => 1, # Å
-    'Øy'            => 1, # Øy
 );
 
 plan tests => scalar( keys %tests );
 
 foreach ( keys %tests ) {
-    is( syllables($_), $tests{$_} );
+    is( syllables($_), $tests{$_}, "'" . $_ . "' passed!" );
 }
 
 done_testing;

@@ -4,7 +4,7 @@ Lingua::NO::Syllable - Count the number of syllables in Norwegian words.
 
 # VERSION
 
-Version 0.05.
+Version 0.06.
 
 # SYNOPSIS
 
@@ -25,8 +25,8 @@ this module might work for the Danish language as well.
 
 # ACCENTED CHARACTERS
 
-Accented characters, like é, à etc., are normalized (see [Unicode::Normalize](https://metacpan.org/pod/Unicode::Normalize))
-before the number of syllables are calculated.
+Accented characters, like é, à etc., are normalized (using [Unicode::Normalize](https://metacpan.org/pod/Unicode::Normalize))
+before the number of syllables are counted.
 
 # SEE ALSO
 
@@ -62,7 +62,7 @@ You can also look for information at:
 
 # LICENSE AND COPYRIGHT
 
-Copyright 2015 Tore Aursand.
+Copyright 2015-2016 Tore Aursand.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a

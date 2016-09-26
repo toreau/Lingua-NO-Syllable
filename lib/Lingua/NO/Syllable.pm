@@ -21,11 +21,11 @@ Lingua::NO::Syllable - Count the number of syllables in Norwegian words.
 
 =head1 VERSION
 
-Version 0.05.
+Version 0.06.
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 SYNOPSIS
 
@@ -97,8 +97,8 @@ sub syllables {
 
 =head1 ACCENTED CHARACTERS
 
-Accented characters, like é, à etc., are normalized (see L<Unicode::Normalize>)
-before the number of syllables are calculated.
+Accented characters, like é, à etc., are normalized (using L<Unicode::Normalize>)
+before the number of syllables are counted.
 
 =head1 SEE ALSO
 
@@ -142,7 +142,7 @@ L<http://search.cpan.org/dist/Lingua-NO-Syllable/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2015 Tore Aursand.
+Copyright 2015-2016 Tore Aursand.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
